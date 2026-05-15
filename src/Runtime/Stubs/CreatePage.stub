@@ -1,0 +1,8 @@
+<?php
+
+namespace {{NAMESPACE}};
+
+class {{CLASSNAME}} extends \Lyre\Filament\Admin\Pages\DynamicCreateRecordPage
+{
+    protected static string $resource = \{{RESOURCE_FQCN}}::class;
+}

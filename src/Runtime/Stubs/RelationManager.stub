@@ -1,0 +1,12 @@
+<?php
+
+namespace {{NAMESPACE}};
+
+class {{CLASSNAME}} extends \Lyre\Filament\Admin\Relationships\BaseDynamicRelationManager
+{
+    protected static string $relationship = '{{RELATIONSHIP}}';
+
+    protected static ?string $relatedModel = \{{RELATED_MODEL_FQCN}}::class;
+
+    protected static string $metadataKey = '{{METADATA_KEY}}';
+}

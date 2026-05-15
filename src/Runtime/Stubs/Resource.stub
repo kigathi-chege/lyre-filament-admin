@@ -1,0 +1,12 @@
+<?php
+
+namespace {{NAMESPACE}};
+
+class {{CLASSNAME}} extends \Lyre\Filament\Admin\Resources\BaseDynamicResource
+{
+    protected static ?string $model = \{{MODEL_FQCN}}::class;
+
+    protected static string $metadataKey = '{{METADATA_KEY}}';
+
+    protected static string $resourceKey = '{{RESOURCE_KEY}}';
+}

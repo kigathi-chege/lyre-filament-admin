@@ -1,0 +1,56 @@
+{
+    "name": "lyre/filament-admin",
+    "description": "Runtime, metadata-driven Filament admin engine for the Lyre ecosystem",
+    "keywords": [
+        "lyre",
+        "filament",
+        "admin",
+        "runtime",
+        "metadata",
+        "laravel"
+    ],
+    "license": "MIT",
+    "version": "1.0.0",
+    "type": "library",
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Lyre\\Filament\\Admin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lyre\\Filament\\Admin\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kigathi-chege",
+            "email": "chegekigathi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^5.0",
+        "laravel/framework": "^10.0 || ^11.0 || ^12.0 || ^13.0",
+        "lyre/lyre": "^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.0 || ^12.0",
+        "mockery/mockery": "^1.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lyre\\Filament\\Admin\\Providers\\LyreFilamentAdminServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
